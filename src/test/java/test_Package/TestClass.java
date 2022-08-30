@@ -9,18 +9,16 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import data_Providers.Excel_Reader;
+import dataProviders.ExcelReader;
 import pages.CareersPage;
 import pages.CompanyPage;
 import pages.ContactUsPage;
 import pages.FacebookPage;
 import pages.HomePage;
-import setup.TestBase;
+import setup.Base;
 
 
- 
-
-public class TestClass extends TestBase {
+public class TestClass extends Base {
 
 	HomePage homepage_obj;
 	CareersPage careerspage_obj;
@@ -29,10 +27,10 @@ public class TestClass extends TestBase {
 	FacebookPage facebook_obj;
 	
 	@DataProvider(name="Data")
-	public Object[][] userRegisterData() throws IOException
+	public Object[][] userRegisterData() throws IOException 
 	{
-		Excel_Reader ER = new Excel_Reader();
-		return ER.getExcelData();
+		ExcelReader ER = new ExcelReader();
+		return ER.getExcelData();                                  
 	}
 
 
@@ -69,8 +67,9 @@ public class TestClass extends TestBase {
 
 	}
 
-	@Test
+	@Test 
 	public void TestCase3() {
+		
 		careerspage_obj = new CareersPage();
 
 		careerspage_obj.click_careers();
@@ -93,7 +92,7 @@ public class TestClass extends TestBase {
 		softAssert.assertTrue(careerspage_obj.assert_applyBtn_isDisplayed());
 
 		careerspage_obj.click_Apply();
-		careerspage_obj.fill_Fields();
+		careerspage_obj.fill_Fields("Hassan", "test@test");
 		careerspage_obj.click_Send();
 
 		assertEquals(careerspage_obj.assert_invalid_message(), "The e-mail address entered is invalid.");

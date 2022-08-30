@@ -7,9 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import setup.TestBase;
+import setup.Base;
 
-public class CareersPage extends TestBase{
+public class CareersPage extends Base{
 
 	
 	// Locators
@@ -89,10 +89,10 @@ public class CareersPage extends TestBase{
 		
 	}
 	
-	public void fill_Fields() 
+	public void fill_Fields(String Name, String Email) 
 	{
-		getDriverInstance().findElement(name).sendKeys("test");
-		getDriverInstance().findElement(email).sendKeys("test@test");
+		getDriverInstance().findElement(name).sendKeys(Name);
+		getDriverInstance().findElement(email).sendKeys(Email);
 		getDriverInstance().findElement(chooseCV).sendKeys(System.getProperty("user.dir")+"/src/test/resources/Test doc.docx");
 		
 	}

@@ -10,14 +10,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 
-
-public class TestBase {
+public class Base {
 
 	public static WebDriver driver;
 	protected  Properties pro;
 
 	@BeforeTest
-	
 	public void readConfig() throws Exception
 	{
 		FileConfig pConf = new FileConfig();
@@ -54,6 +52,8 @@ public class TestBase {
 	public void stopDriver() {
 		driver.quit();
 	}
+	
+
 	
 
 

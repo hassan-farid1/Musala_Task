@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestPackage.TestClass">
+      <class name="test_Package.TestClass">
         <methods>
-          <include name="TestCase2"/>
-          <include name="stopDriver"/>
-          <include name="TestCase4"/>
           <include name="TestCase3"/>
           <include name="readConfig"/>
           <include name="startDriver"/>
-          <include name="TestCase1"/>
+          <include name="stopDriver"/>
         </methods>
-      </class> <!-- TestPackage.TestClass -->
+      </class> <!-- test_Package.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

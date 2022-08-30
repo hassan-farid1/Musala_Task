@@ -2,9 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 
-import setup.TestBase;
+import setup.Base;
 
-public class CompanyPage extends TestBase {
+public class CompanyPage extends Base {
 	
 	
 	FacebookPage facebook;

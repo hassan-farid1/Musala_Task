@@ -2,9 +2,9 @@ package pages;
 
 import java.util.Set;
 
-import setup.TestBase;
+import setup.Base;
 
-public class FacebookPage extends TestBase{
+public class FacebookPage extends Base{
 	
 	public String  assert_FBPage_url()
 	{

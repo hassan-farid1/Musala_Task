@@ -3,9 +3,9 @@ package pages;
 
 import org.openqa.selenium.By;
 
-import setup.TestBase;
+import setup.Base;
 
-public class ContactUsPage extends TestBase
+public class ContactUsPage extends Base
 {
 	
 	

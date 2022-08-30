@@ -27,12 +27,11 @@ public class Base {
 		
 		String browser = pro.getProperty("browser");
 		if(browser.equalsIgnoreCase("chrome")){
-		//	WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe");  
 			driver = new ChromeDriver();
 		}
 		else if (browser.equalsIgnoreCase("firefox")){	
-		//WebDriverManager.firefoxdriver().setup();
+			System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"/Drivers/geckodriver.exe"); 
 			driver = new FirefoxDriver();
  
 		}

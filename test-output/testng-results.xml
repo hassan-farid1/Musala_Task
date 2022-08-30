@@ -2,24 +2,24 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-31T00:44:59 EET" name="Default suite" finished-at="2022-08-31T00:45:23 EET" duration-ms="23484">
+  <suite started-at="2022-08-31T01:23:18 EET" name="Default suite" finished-at="2022-08-31T01:23:43 EET" duration-ms="24475">
     <groups>
     </groups>
-    <test started-at="2022-08-31T00:44:59 EET" name="Default test" finished-at="2022-08-31T00:45:23 EET" duration-ms="23484">
+    <test started-at="2022-08-31T01:23:18 EET" name="Default test" finished-at="2022-08-31T01:23:43 EET" duration-ms="24475">
       <class name="test_Package.TestClass">
-        <test-method is-config="true" signature="readConfig()[pri:0, instance:test_Package.TestClass@13e344d]" started-at="2022-08-31T00:44:59 EET" name="readConfig" finished-at="2022-08-31T00:45:00 EET" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="readConfig()[pri:0, instance:test_Package.TestClass@f0c8a99]" started-at="2022-08-31T01:23:18 EET" name="readConfig" finished-at="2022-08-31T01:23:18 EET" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readConfig -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:test_Package.TestClass@13e344d]" started-at="2022-08-31T00:45:00 EET" name="startDriver" finished-at="2022-08-31T00:45:08 EET" duration-ms="8811" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:test_Package.TestClass@f0c8a99]" started-at="2022-08-31T01:23:18 EET" name="startDriver" finished-at="2022-08-31T01:23:28 EET" duration-ms="10016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="TestCase3()[pri:0, instance:test_Package.TestClass@13e344d]" started-at="2022-08-31T00:45:08 EET" name="TestCase3" finished-at="2022-08-31T00:45:23 EET" duration-ms="14295" status="PASS">
+        <test-method signature="TestCase4()[pri:0, instance:test_Package.TestClass@f0c8a99]" started-at="2022-08-31T01:23:28 EET" name="TestCase4" finished-at="2022-08-31T01:23:43 EET" duration-ms="14144" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCase3 -->
-        <test-method is-config="true" signature="stopDriver()[pri:0, instance:test_Package.TestClass@13e344d]" started-at="2022-08-31T00:45:23 EET" name="stopDriver" finished-at="2022-08-31T00:45:23 EET" duration-ms="316" status="PASS">
+        </test-method> <!-- TestCase4 -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:test_Package.TestClass@f0c8a99]" started-at="2022-08-31T01:23:43 EET" name="stopDriver" finished-at="2022-08-31T01:23:43 EET" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
